@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAES History 2025 - WWS Chile</title>
+    <meta name="description" content="Master the history of Chile and the world. Citizen education and basic economics for the PAES.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ca8a04',
+                        dark: '#0f0f1a',
+                        card: '#1a1a2e',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0f0f1a;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .glow-circle {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #ca8a0422 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #ca8a04 0%, #ffffff 200%);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px #ca8a0466;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "PAES Historia",
+  "operatingSystem": "Android",
+  "applicationCategory": "EducationalApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Master the history of Chile and the world. Citizen education and basic economics for the PAES.",
+  "author": {
+    "@type": "Organization",
+    "name": "WWS Chile",
+    "url": "https://wws.cl"
+  }
+}
+    </script>
+</head>
+<body class="font-sans">
+    <div class="glow-circle -top-40 -left-40"></div>
+    <div class="glow-circle bottom-0 -right-40"></div>
+
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
+        <div class="text-2xl font-display font-black tracking-tighter">PAES Historia</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+            <a href="/" class="hover:text-white transition">Home</a>
+            <a href="#features" class="hover:text-white transition">Features</a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.wws.paeshistoria" class="btn-primary px-6 py-2 rounded-full font-bold text-sm">Download</a>
+    </nav>
+
+    <header class="container mx-auto px-6 pt-20 pb-32 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div class="fade-in">
+            <h1 class="text-5xl md:text-7xl font-display font-extrabold leading-tight mb-6">
+                Learn from the <span class='text-gradient'>past</span> for your future
+            </h1>
+            <p class="text-xl text-gray-400 mb-10 leading-relaxed max-w-xl">
+                The most detailed historical analysis in mobile format. Interactive maps, timelines, and real exams.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://play.google.com/store/apps/details?id=com.wws.paeshistoria" class="btn-primary px-10 py-4 rounded-2xl font-black text-lg flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                    Download Free
+                </a>
+            </div>
+        </div>
+        <div class="relative flex justify-center lg:justify-end">
+            <div class="glass w-72 h-[580px] rounded-[3rem] p-4 border-4 border-white/10 shadow-2xl relative overflow-hidden">
+                <div class="w-full h-full rounded-[2rem] overflow-hidden bg-dark flex flex-col items-center justify-center p-8 text-center">
+                    <img src="../assets/logo.png" alt="PAES Historia" class="w-32 h-32 rounded-3xl shadow-2xl mb-6">
+                    <div class="text-2xl font-display font-bold mb-2">PAES Historia</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">Education</div>
+                    <div class="mt-8 space-y-2 w-full">
+                        <div class="h-1 w-full bg-gray-800 rounded-full"><div class="h-full bg-primary w-2/3 rounded-full"></div></div>
+                        <div class="h-1 w-full bg-gray-800 rounded-full"><div class="h-full bg-primary w-1/2 rounded-full"></div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Floating element -->
+            <div class="absolute -bottom-10 -left-10 glass p-6 rounded-2xl border border-white/10 shadow-2xl animate-bounce">
+                <div class="text-primary font-black text-2xl">4.9 ★</div>
+                <div class="text-gray-500 text-xs uppercase">Positive reviews</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-32 bg-dark/50 relative z-10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-display font-bold mb-4">History and Society</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="glass p-8 rounded-3xl border border-white/5 hover:border-primary/30 transition">
+                    <div class="text-4xl mb-6">🇨🇱</div>
+                    <h3 class="text-xl font-display font-bold mb-4">Chilean History</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">From independence to the present with a critical vision.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border border-white/5 hover:border-primary/30 transition">
+                    <div class="text-4xl mb-6">🌍</div>
+                    <h3 class="text-xl font-display font-bold mb-4">Contemporary World</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Understand the major processes of the 20th Century and their impact today.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border border-white/5 hover:border-primary/30 transition">
+                    <div class="text-4xl mb-6">⚖️</div>
+                    <h3 class="text-xl font-display font-bold mb-4">Civics Education</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Master concepts of democracy, rights, and basic economics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 relative z-10">
+        <div class="container mx-auto px-6">
+            <div class="glass p-12 md:p-20 rounded-[3rem] text-center border border-white/10 relative overflow-hidden">
+                <div class="glow-circle -top-20 -left-20"></div>
+                <h2 class="text-4xl md:text-6xl font-display font-extrabold mb-8">Master History</h2>
+                <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">The best preparation for the History and Social Sciences elective.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.wws.paeshistoria" class="btn-primary px-12 py-5 rounded-2xl font-black text-xl inline-block">Get it Now!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/5 relative z-10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-xl font-display font-black text-gray-500">PAES Historia</div>
+            <div class="flex gap-10 text-sm text-gray-500">
+                <a href="/privacy.html" class="hover:text-white transition">Privacy</a>
+                <a href="/terms.html" class="hover:text-white transition">Terms</a>
+                <a href="mailto:contact@wws.cl" class="hover:text-white transition">Contact</a>
+            </div>
+            <div class="text-gray-600 text-xs">© 2024 WWS Chile. All rights reserved.</div>
+        </div>
+    </footer>
+
+<!-- Ko-fi support banner (VFS Tech / WWS) -->
+<a href="https://ko-fi.com/vfstech" target="_blank" rel="noopener" aria-label="Buy me a coffee" style="position:fixed;bottom:20px;right:20px;z-index:9999;background:#13C3FF;color:#ffffff;padding:12px 18px;border-radius:9999px;font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:14px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25);display:inline-flex;align-items:center;gap:8px;">☕ <span>Buy me a coffee</span></a>
+</body>
+</html>
